@@ -1,0 +1,6 @@
+[SETUP]
+type=python
+path=EpoptesClient.py
+class=EpoptesClient
+[METHODS]
+startup=adm,admins
