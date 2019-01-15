@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -e
+
+
+if [ "$1" = "remove" ] ; then
+	
+	PKG="n4d-epoptes-client"
+
+	ORIGINAL_FILE="/etc/default/tlp"
+	NEW_DIVERTED_FILE="/etc/default/tlp.diverted"
+	LLIUREX_FILE="/etc/default/tlp.lliurex"
+	
+	if [ -f "$NEW_DIVERTED_FILE" ]; then
+		rm -rf $ORIGINAL_FILE || true
+		dpkg-divert --remove --package ${PKG} --rename --divert "$NEW_DIVERTED_FILE" "$ORIGINAL_FILE"
+
+	fi
+
+
+fi
+#DEBHELPER#
+
+exit 0
