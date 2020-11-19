@@ -1,3 +1,9 @@
+n4d-epoptes-client (0.9) bionic; urgency=medium
+
+  * Added n4d-epoptes-common dependency
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 19 Nov 2020 12:45:19 +0100
+
 n4d-epoptes-client (0.8) bionic; urgency=medium
 
   * Adding sudo group
