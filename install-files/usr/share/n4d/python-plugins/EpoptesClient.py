@@ -7,10 +7,10 @@ class EpoptesClient:
 	
 	def startup(self,options):
 		
-		if options["controlled"]:
-			if options["boot"]:
-				self.grab_epoptes_certificate_thread()
-				self.disable_wol_thread()
+		#Old n4d:if options["controlled"]:
+		if options["boot"]:
+			self.grab_epoptes_certificate_thread()
+			self.disable_wol_thread()
 					
 	#def startup
 	
@@ -28,10 +28,13 @@ class EpoptesClient:
 			
 			execute=False
 			p=subprocess.Popen(["ps aux | grep 'epoptes-client -c' | wc -l"],shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
-			output=p.communicate()
+			output=p.communicate()[0]
+
+			if type(output) is bytes:
+				output=output.decode()
 
 			try:
-				t=int(output[0].strip("\n"))
+				t=int(output.strip("\n"))
 				if t<=2:
 					execute=True
 			except:

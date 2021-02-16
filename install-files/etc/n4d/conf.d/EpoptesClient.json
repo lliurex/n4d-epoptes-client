@@ -1,0 +1,16 @@
+{
+	"SETUP":{
+		"type":"python",
+		"path":"EpoptesClient.py",
+		"class":"EpoptesClient"
+	},
+	"METHODS":{
+		"startup":{
+			"allowed_groups":[
+				"sudo",
+				"admins"
+			]
+		}
+	}
+}	
+
