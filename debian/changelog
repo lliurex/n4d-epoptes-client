@@ -1,0 +1,65 @@
+n4d-epoptes-client (0.9) bionic; urgency=medium
+
+  * Added n4d-epoptes-common dependency
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 19 Nov 2020 12:45:19 +0100
+
+n4d-epoptes-client (0.8) bionic; urgency=medium
+
+  * Adding sudo group
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 14 Feb 2019 11:00:40 +0100
+
+n4d-epoptes-client (0.7) bionic; urgency=medium
+
+  * First bionic release
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 02 May 2018 09:15:42 +0200
+
+n4d-epoptes-client (0.6.3) xenial; urgency=high
+
+  * Forcing n4d restart if version less than 0.6.3
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 16 Oct 2017 08:42:32 +0200
+
+n4d-epoptes-client (0.6.2) xenial; urgency=high
+
+  * Updated startup logic
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 13 Oct 2017 13:28:18 +0200
+
+n4d-epoptes-client (0.6.1) xenial; urgency=high
+
+  * Moving executions to threads to make sure it doesn't block the execution of other startups
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 13 Oct 2017 08:35:44 +0200
+
+n4d-epoptes-client (0.6) xenial; urgency=high
+
+  * Enabling wol on startup and making sure tlp doesn't disable it
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 06 Jun 2017 12:49:34 +0200
+
+n4d-epoptes-client (0.5) xenial; urgency=medium
+
+  * First xenial release
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 12 Feb 2016 13:02:36 +0100
+
+n4d-epoptes-client (0.3) trusty; urgency=medium
+
+  * first trusty release
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 09 Jan 2015 10:03:25 +0100
+
+n4d-epoptes-client (0.2) precise; urgency=low
+
+  * UNRELEASED
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 02 Jul 2013 12:19:37 +0200
+
+n4d-epoptes-client (0.1) precise; urgency=high
+
+  * Initial release.
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 02 Jul 2013 11:47:36 +0200

@@ -1,0 +1,32 @@
+#!/bin/bash
+
+set -e
+
+
+if  [ "$1" = "configure" ] ; then
+
+	PKG="n4d-epoptes-client"
+
+	ORIGINAL_FILE="/etc/default/tlp"
+	NEW_DIVERTED_FILE="/etc/default/tlp.diverted"
+	LLIUREX_FILE="/etc/default/tlp.lliurex"
+
+	if [ ! -L "$ORIGINAL_FILE" ]; then
+
+		dpkg-divert --add --package ${PKG} --rename --divert "$NEW_DIVERTED_FILE" "$ORIGINAL_FILE"
+		ln -s "$LLIUREX_FILE" "$ORIGINAL_FILE"
+
+	fi
+
+	n4d-modules enable-plugin /etc/n4d/conf.d/EpoptesClient || true
+
+	if dpkg --compare-versions "$2" lt 0.6.3; then
+                deb-systemd-invoke restart n4d || true
+        fi
+
+fi
+
+#DEBHELPER#
+
+exit 0
+
