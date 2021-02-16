@@ -18,7 +18,7 @@ if  [ "$1" = "configure" ] ; then
 
 	fi
 
-	n4d-modules enable-plugin /etc/n4d/conf.d/EpoptesClient || true
+	n4d-modules enable-plugin /etc/n4d/conf.d/EpoptesClient.json || true
 
 	if dpkg --compare-versions "$2" lt 0.6.3; then
                 deb-systemd-invoke restart n4d || true
