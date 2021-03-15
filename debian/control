@@ -11,6 +11,6 @@ Homepage: http://www.lliurex.net
 Package: n4d-epoptes-client
 Architecture: all
 Pre-depends: n4d
-Depends: ${shlibs:Depends}, ${misc:Depends}, epoptes-client, python-llxnet, n4d-epoptes-common
+Depends: ${shlibs:Depends}, ${misc:Depends}, epoptes-client, python3-llxnet, n4d-epoptes-common
 Description: n4d plugin for epoptes-client
  Plugin to configure epoptes-client

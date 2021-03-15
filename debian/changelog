@@ -1,3 +1,9 @@
+n4d-epoptes-client (0.19.1) focal; urgency=medium
+
+  * Fixed python3-llxnet depend in control
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 15 Mar 2021 12:45:28 +0100
+
 n4d-epoptes-client (0.19) focal; urgency=medium
 
   * Initial release for focal
