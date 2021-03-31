@@ -1,3 +1,9 @@
+n4d-epoptes-client (0.19.2) focal; urgency=medium
+
+  * Delete deprecated n4d conf file
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 31 Mar 2021 10:41:26 +0200
+
 n4d-epoptes-client (0.19.1) focal; urgency=medium
 
   * Fixed python3-llxnet depend in control
