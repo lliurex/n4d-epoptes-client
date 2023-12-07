@@ -1,3 +1,9 @@
+n4d-epoptes-client (0.19.2.23) jammy; urgency=medium
+
+  * First jammy release 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 07 Dec 2023 10:46:11 +0100
+
 n4d-epoptes-client (0.19.2) focal; urgency=medium
 
   * Delete deprecated n4d conf file
